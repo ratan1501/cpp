@@ -39,12 +39,22 @@ using namespace std;
 // }
 
 // infinite loop
-int main (){
-    int i = 0;
-    for (; ;){
-        if (i<5){
-            cout << i << endl;
-            i++;
-        }
-    }
-}
+// int main (){
+//     int i = 0;
+//     for (; ;){
+//         if (i<5){
+//             cout << i << endl;
+//             i++;
+//         }
+//     }
+// }s
+
+// ticky questions
+// int main() {
+//     int n;
+//     cout << "Enter a number: ";
+//     if(cin >> n) {
+//         cout << "Ratan" << endl;
+//     }
+// }
+
