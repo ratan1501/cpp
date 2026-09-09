@@ -11,11 +11,15 @@ using namespace std;
 //     }
 // }
 
-// printing rectangle (pattern)
-int main() {
-    for(int i=0; i<3; i++) {
-        for(int j=0; j<5; j++){
-            cout << "* ";
+// printing solid rectangle (user input)
+int main () {
+    int n;
+    cout << "Enter the number for printing stars: ";
+    cin >> n;
+
+    for (int i=0; i<n; i++){ 
+        for(int j=0; j<n; j++) {
+            cout << " *";
         }
         cout << endl;
     }
