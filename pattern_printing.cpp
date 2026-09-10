@@ -12,15 +12,46 @@ using namespace std;
 // }
 
 // printing solid rectangle (user input)
-int main () {
-    int n;
-    cout << "Enter the number for printing stars: ";
-    cin >> n;
 
-    for (int i=0; i<n; i++){ 
-        for(int j=0; j<n; j++) {
-            cout << " *";
+// OUTER: i = 0
+//     INNER: j = 0 → print *
+//     INNER: j = 1 → print *
+//     INNER: j = 2 → print *
+//     INNER: j = 3 → STOP
+
+//     endl
+
+// OUTER: i = 1
+//     INNER: j = 0 → print *
+//     INNER: j = 1 → print *
+//     INNER: j = 2 → print *
+//     INNER: j = 3 → STOP
+
+//     endl
+
+// OUTER: i = 2
+//     INNER: j = 0 → print *
+//     INNER: j = 1 → print *
+//     INNER: j = 2 → print *
+//     INNER: j = 3 → STOP
+
+//     endl
+
+// OUTER: i = 3 → STOP
+
+
+int main (){
+    int n;
+    cout << "Enter a Number for print pattern: ";
+    cin >> n;
+    for(int i=0; i<n; i++) {
+        for(int j=0; j<n; j++){
+            cout << " * ";
         }
         cout << endl;
     }
 }
+
+
+
+
