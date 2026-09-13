@@ -76,28 +76,50 @@ using namespace std;
 
 // Hollow Rectangle using User Input
 
-int main (){
-    int rowCount, colCount;
-    cout << "Enter the number of rows: ";
-    cin >> rowCount;
-    cout << "Enter the number of coloumn: ";
-    cin >> colCount;
+// int main (){
+//     int rowCount, colCount;
+//     cout << "Enter the number of rows: ";
+//     cin >> rowCount;
+//     cout << "Enter the number of coloumn: ";
+//     cin >> colCount;
 
-    for (int row=0; row<rowCount; row++){
-        if(row==0 || row == rowCount-1) {
-            for(int col=0; col<colCount; col++) {
+//     for (int row=0; row<rowCount; row++){
+//         if(row==0 || row == rowCount-1) {
+//             for(int col=0; col<colCount; col++) {
+//                 cout << "* ";
+//             }
+//         }
+//         else{
+//             cout << "* ";
+//             for(int i=0; i<colCount-2; i++) {
+//                 cout << "  ";
+//             }
+//             cout << "* ";
+//         }
+//         cout << endl;
+//     }
+    
+// }
+
+
+
+// hollow rectangle 
+
+int main(){
+    int n;
+    for(int row=0; row<3; row++) {
+        if (row==0 || row==2){  //For each row, decide whether it should be a completely filled row or a hollow row.
+            for(int i=0; i<5 ; i++) { // prints 5 starts
                 cout << "* ";
             }
         }
-        else{
+        else {
             cout << "* ";
-            
-            for(int i=0; i<colCount-2; i++) {
+            for(int i=0; i<3; i++) {
                 cout << "  ";
             }
             cout << "* ";
         }
         cout << endl;
-    }
-    
+    } 
 }
