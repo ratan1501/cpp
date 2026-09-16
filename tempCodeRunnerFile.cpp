@@ -1,8 +1,12 @@
 int main() {
-    for(int i=0; i<3; i++) {
-        for(int j=0; j<5; j++){
-            cout << "* ";
-        }
-        cout << endl;
-    }
-}
+//     int n;
+//     cout << "Enter a number: ";
+//     cin >> n;
+
+//     for(int row = 0; row < n; row++) {
+//         for(int col = 0; col <= row; col++) {
+//             cout << col + 1;
+//         }
+//         cout << endl;
+//     }
+// }

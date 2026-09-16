@@ -3,7 +3,10 @@ using namespace std;
 
 // Triangle Pattern Printing
 // int main() {
-//     for (int i=1; i<=5; i++){
+//     int n;
+//     cout << "Enter a number: ";
+//     cin >> n;
+//     for (int i=1; i<=n; i++){
 //         for (int j=1; j<=i; j++) {
 //             cout << " * ";
 //         }
@@ -105,21 +108,63 @@ using namespace std;
 
 // hollow rectangle 
 
-int main(){
-    int n;
-    for(int row=0; row<3; row++) {
-        if (row==0 || row==2){  //For each row, decide whether it should be a completely filled row or a hollow row.
-            for(int i=0; i<5 ; i++) { // prints 5 starts
-                cout << "* ";
-            }
-        }
-        else {
-            cout << "* ";
-            for(int i=0; i<3; i++) {
-                cout << "  ";
-            }
-            cout << "* ";
-        }
-        cout << endl;
-    } 
-}
+// int main(){
+//     int n;
+//     for(int row=0; row<3; row++) {
+//         if (row==0 || row==2){  //For each row, decide whether it should be a completely filled row or a hollow row.
+//             for(int i=0; i<5 ; i++) { // prints 5 starts
+//                 cout << "* ";
+//             }
+//         }
+//         else {
+//             cout << "* ";
+//             for(int i=0; i<3; i++) {
+//                 cout << "  ";
+//             }
+//             cout << "* ";
+//         }
+//         cout << endl;
+//     } 
+// }
+
+
+// Inverted Half Pyramid
+// int main() {
+//     int n;
+//     cout << "Enter the number: ";
+//     cin >> n;
+//     for(int row=0; row<n; row++){
+//         for(int col=0; col < n-row; col++) {
+//             cout << "* ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// increasing triangle
+// int main() {
+//     int n;
+//     cout << "Enter a number: ";
+//     cin >> n;
+
+//     for(int row = 0; row < n; row++) {
+//         for(int col = 0; col <= row; col++) {
+//             cout << col + 1;
+//         }
+//         cout << endl;
+//     }
+// }
+
+
+// decreasing triangle
+// int main() {
+//     int n;
+//     cout << "Enter a number: ";
+//     cin >> n;
+//     for(int row=0; row<n; row++) {
+//         for(int col=0; col<n-row; col++) {
+//             cout << col + 1 ;
+//         }
+//         cout << endl;
+//     }
+// }
