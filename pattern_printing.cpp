@@ -168,3 +168,5 @@ using namespace std;
 //         cout << endl;
 //     }
 // }
+
+// full pyramid and inverted full pyramid
