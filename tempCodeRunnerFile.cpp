@@ -1,12 +1,10 @@
 int main() {
 //     int n;
-//     cout << "Enter a number: ";
+//     cout << "Enter a Number: ";
 //     cin >> n;
 
-//     for(int row = 0; row < n; row++) {
-//         for(int col = 0; col <= row; col++) {
-//             cout << col + 1;
-//         }
+//     for(int i=0; i<n; i++) {
+//         cout << i;
 //         cout << endl;
 //     }
 // }

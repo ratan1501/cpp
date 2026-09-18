@@ -10,7 +10,7 @@ using namespace std;
 //         for (int j=1; j<=i; j++) {
 //             cout << " * ";
 //         }
-//         cout << endl; 
+//         cout << endl;
 //     }
 // }
 
@@ -41,12 +41,11 @@ using namespace std;
 
 // OUTER: i = 3 → STOP
 
-
 // int main() {
 //     int n;
 //     cout << "Enter a Number: ";
 //     cin >> n;
-    
+
 //     for(int i=0; i<n; i++) {
 //         for(int j=0; j<n; j++) {
 //             cout << " * ";
@@ -54,7 +53,6 @@ using namespace std;
 //         cout << endl;
 //     }
 // }
-
 
 // Hollow Rectangle
 // int main(){
@@ -73,9 +71,8 @@ using namespace std;
 //             cout << "* ";
 //         }
 //         cout << endl;
-//     } 
+//     }
 // }
-
 
 // Hollow Rectangle using User Input
 
@@ -101,12 +98,10 @@ using namespace std;
 //         }
 //         cout << endl;
 //     }
-    
+
 // }
 
-
-
-// hollow rectangle 
+// hollow rectangle
 
 // int main(){
 //     int n;
@@ -124,9 +119,8 @@ using namespace std;
 //             cout << "* ";
 //         }
 //         cout << endl;
-//     } 
+//     }
 // }
-
 
 // Inverted Half Pyramid
 // int main() {
@@ -155,7 +149,6 @@ using namespace std;
 //     }
 // }
 
-
 // decreasing triangle
 // int main() {
 //     int n;
@@ -170,3 +163,74 @@ using namespace std;
 // }
 
 // full pyramid and inverted full pyramid
+
+// multiple of two numbers
+
+// int main()
+// {
+//     int firstNum;
+//     cout << "Enter First Number: ";
+//     cin >> firstNum;
+//     int secNum;
+//     cout << "Enter Second Number: ";
+//     cin >> secNum;
+
+//     int multi = firstNum * secNum;
+
+//     cout << multi;
+// }
+
+// Find the perimenter of a triangle 
+// int main() {
+//     int a;
+//     cout << "Enter a: ";
+//     cin >> a;
+//     int b;
+//     cout << "Enter b: ";
+//     cin >> b;
+//     int c;
+//     cout << "Enter c: ";
+//     cin >> c;
+
+//     int perimeter = a + b + c;
+//     cout << "Your Perimeter is: " << perimeter ;
+// }
+
+// Simple intrest
+
+// int main() {
+//     int p, r, t;
+//     cout << "Enter p: ";
+//     cin >> p;
+//     cout << "Enter r: ";
+//     cin >> r;
+//     cout << "Enter t: ";
+//     cin >> t;
+
+//     int si = (p*r*t) / 100;
+//     cout << "simple intrest is: " << si;
+// }
+
+// Print couting from 1 to N
+// int main() {
+//     int n;
+//     cout << "Enter a Number: ";
+//     cin >> n;
+
+//     for(int i=0; i<n; i++) {
+//         cout << i;
+//         cout << endl;
+//     }
+// }
+
+// Print counting from N to 1
+int main() {
+    int n;
+    cout << "Enter a Number: ";
+    cin >> n;
+
+    for(int i=n; i>=1; i--) {
+        cout << i;
+        cout << endl;
+    }
+}
