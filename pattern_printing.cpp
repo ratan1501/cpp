@@ -34,7 +34,8 @@ using namespace std;
     //     }
     // }
 
-    // Hollow Rectangle int main()
+    // Hollow Rectangle 
+    // int main()
     // {
     //     int n;
     //     for (int row = 0; row < 3; row++)
