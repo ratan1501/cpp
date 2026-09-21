@@ -18,21 +18,7 @@ using namespace std;
 
 // Solid Rectangle using User Input
 //     OUTER : i = 0 INNER : j = 0 → print *INNER : j = 1 → print *INNER : j = 2 → print *INNER : j = 3 → STOP
-
-//                                                                                                    endl
-
-//                                                                                                        OUTER : i = 1 INNER : j = 0 → print *INNER : j = 1 → print *INNER : j = 2 → print *INNER : j = 3 → STOP
-
-//                                                                                                                                                                                                       endl
-
-//                                                                                                                                                                                                           OUTER : i = 2 INNER : j = 0 → print *INNER : j = 1 → print *INNER : j = 2 → print *INNER : j = 3 → STOP
-
-//                                                                                                                                                                                                                                                                                                          endl
-
-//                                                                                                                                                                                                                                                                                                              OUTER : i = 3 → STOP
-
-//                                                                                                                                                                                                                                                                                                                      int
-//                                                                                                                                                                                                                                                                                                                      main()
+                                                                                                                                                                                                                                                                                                                  main()
 // {
 //     int n;
 //     cout << "Enter a Number: ";
@@ -194,3 +180,6 @@ using namespace std;
 //         cout << endl;
 //     }
 // }
+
+
+// Hollow Inverted half Pyramid

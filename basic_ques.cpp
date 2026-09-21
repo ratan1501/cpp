@@ -125,29 +125,32 @@ using namespace std;
 // }
 
 // Print maximum of three numbers
+// int main () {
+//     int firstNumber;
+//     int secondNumber;
+//     int thirdNumber;
 
-int main () {
-    int firstNumber;
-    int secondNumber;
-    int thirdNumber;
+//     cout << "Enter First Number: ";
+//     cin >> firstNumber;
 
-    cout << "Enter First Number: ";
-    cin >> firstNumber;
+//     cout << "Enter First Number: ";
+//     cin >> secondNumber;
 
-    cout << "Enter First Number: ";
-    cin >> secondNumber;
+//     cout << "Enter First Number: ";
+//     cin >> thirdNumber;
 
-    cout << "Enter First Number: ";
-    cin >> thirdNumber;
+//     if(firstNumber >= secondNumber && firstNumber >= thirdNumber ) {
+//         cout << "First Number is Greater.";
+//     }
+//     else if (secondNumber >= firstNumber && secondNumber >= thirdNumber) {
+//         cout << "Second Number is Greater.";
+//     }
+//     else {
+//         cout << "Third Number is Greater.";
+//     }
 
-    if(firstNumber >= secondNumber && firstNumber >= thirdNumber ) {
-        cout << "First Number is Greater.";
-    }
-    else if (secondNumber >= firstNumber && secondNumber >= thirdNumber) {
-        cout << "Second Number is Greater.";
-    }
-    else {
-        cout << "Third Number is Greater.";
-    }
+// }
 
-}
+
+
+
