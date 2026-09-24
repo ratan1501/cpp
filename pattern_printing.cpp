@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+#include <iostream> // I need the I/O tools
+using namespace std; // Let me omit std:: when referring to names from the namespace
 
 // Triangle Pattern Printing int main()
 // {
@@ -183,15 +183,49 @@ using namespace std;
     // }
 
 // Hollow Inverted half Pyramid
+// int main() {
+//     int n;
+//     cout << "Enter a number: ";
+//     cin >> n;
+
+//     for(int i=0; i<n; i++) {
+//         for(int j=0; j<n; j++) {
+//             if(i==0 || j ==0 || j== n-i-1) {
+//                 cout << "*";
+//             }
+//             else {
+//                 cout << " ";
+//             }
+//         }
+//         cout << endl;
+//     }
+// }
+
+// Hollow full pyramid 
+
+#include <iostream>
+using namespace std;
+
 int main() {
     int n;
-    cout << "Enter a number: ";
+    cout << "Enter a Number: ";
     cin >> n;
 
-    for(int i=0; i<n; i++) {
-        for(int j=0; j<n; j++) {
-            if(i==0 || j ==0 || j== n-i-1) {
-                cout << "*";
+    for (int i = 0; i < n; i++) {
+        int k = 0;
+
+        for (int j = 0; j < 2 * n - 1; j++) {
+            if (j < n - i - 1) {
+                cout << " ";
+            }
+            else if (k < 2 * i + 1) {
+                if (k == 0 || k == 2 * i || i == n - 1) {
+                    cout << "*";
+                }
+                else {
+                    cout << " ";
+                }
+                k++;
             }
             else {
                 cout << " ";
