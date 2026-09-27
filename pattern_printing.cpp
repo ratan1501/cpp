@@ -124,7 +124,7 @@ using namespace std;
 //     {
 //         for (int col = 0; col < row + 1; col++)
 //         {
-//             cout << "*";
+//             cout << "* ";
 //         }
 //         cout << endl;
 //     }
@@ -223,10 +223,41 @@ using namespace std;
 // }
 
 // Inverted Full Pyramid
+// int main() {
+//     int n;
+//     cout << "Enter a Number: ";
+//     cin >> n;
+
+//     for(int row=0; row<n; row++) {
+//         //space
+//         for(int col=0; col<row; col++) {
+//             cout << " ";
+//         }
+//         // stars
+//         for(int col=0; col<n-row; col++) {
+//             cout << "* ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// Solid Diamond
 int main() {
     int n;
     cout << "Enter a Number: ";
     cin >> n;
+
+    for (int row=0; row<n; row++) {
+        //space
+        for(int col=0; col<n-row-1; col++) {
+            cout << " ";
+        }
+        //stars
+        for(int col=0; col<row+1; col++) {
+            cout << "* ";
+        }
+        cout << endl;
+    }
 
     for(int row=0; row<n; row++) {
         //space
