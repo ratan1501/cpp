@@ -242,31 +242,79 @@ using namespace std;
 // }
 
 // Solid Diamond
+// int main() {
+//     int n;
+//     cout << "Enter a Number: ";
+//     cin >> n;
+
+//     for (int row=0; row<n; row++) {
+//         //space
+//         for(int col=0; col<n-row-1; col++) {
+//             cout << " ";
+//         }
+//         //stars
+//         for(int col=0; col<row+1; col++) {
+//             cout << "* ";
+//         }
+//         cout << endl;
+//     }
+
+//     for(int row=0; row<n; row++) {
+//         //space
+//         for(int col=0; col<row; col++) {
+//             cout << " ";
+//         }
+//         // stars
+//         for(int col=0; col<n-row; col++) {
+//             cout << "* ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// Hollow Diamond
 int main() {
-    int n;
-    cout << "Enter a Number: ";
+    int n, row, col;
+
+    cout << "Enter a number: ";
     cin >> n;
 
-    for (int row=0; row<n; row++) {
-        //space
-        for(int col=0; col<n-row-1; col++) {
+    // Upper half
+    for(row = 0; row < n; row++) {
+
+        // spaces
+        for(col = 0; col < n - row - 1; col++) {
             cout << " ";
         }
-        //stars
-        for(int col=0; col<row+1; col++) {
-            cout << "* ";
+
+        // stars / inner spaces
+        for(col = 0; col < 2 * row + 1; col++) {
+            if(col == 0 || col == 2 * row) {
+                cout << "*";
+            }
+            else {
+                cout << " ";
+            }
         }
+
         cout << endl;
     }
+    // Lower half
+    for(row = 0; row < n - 1; row++) {
 
-    for(int row=0; row<n; row++) {
-        //space
-        for(int col=0; col<row; col++) {
+        // spaces
+        for(col = 0; col < row + 1; col++) {
             cout << " ";
         }
-        // stars
-        for(int col=0; col<n-row; col++) {
-            cout << "* ";
+
+        // stars / inner spaces
+        for(col = 0; col < 2 * n - 2 * row - 3; col++) {
+            if(col == 0 || col == 2 * n - 2 * row - 4) {
+                cout << "*";
+            }
+            else {
+                cout << " ";
+            }
         }
         cout << endl;
     }
