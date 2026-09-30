@@ -273,52 +273,52 @@ using namespace std;
 // }
 
 // Hollow Diamond
-int main() {
-    int n, row, col;
+// int main() {
+//     int n, row, col;
 
-    cout << "Enter a number: ";
-    cin >> n;
+//     cout << "Enter a number: ";
+//     cin >> n;
 
-    // Upper half
-    for(row = 0; row < n; row++) {
+//     // Upper half
+//     for(row = 0; row < n; row++) {
 
-        // spaces
-        for(col = 0; col < n - row - 1; col++) {
-            cout << " ";
-        }
+//         // spaces
+//         for(col = 0; col < n - row - 1; col++) {
+//             cout << " ";
+//         }
 
-        // stars / inner spaces
-        for(col = 0; col < 2 * row + 1; col++) {
-            if(col == 0 || col == 2 * row) {
-                cout << "*";
-            }
-            else {
-                cout << " ";
-            }
-        }
+//         // stars / inner spaces
+//         for(col = 0; col < 2 * row + 1; col++) {
+//             if(col == 0 || col == 2 * row) {
+//                 cout << "*";
+//             }
+//             else {
+//                 cout << " ";
+//             }
+//         }
 
-        cout << endl;
-    }
-    // Lower half
-    for(row = 0; row < n - 1; row++) {
+//         cout << endl;
+//     }
+//     // Lower half
+//     for(row = 0; row < n - 1; row++) {
 
-        // spaces
-        for(col = 0; col < row + 1; col++) {
-            cout << " ";
-        }
+//         // spaces
+//         for(col = 0; col < row + 1; col++) {
+//             cout << " ";
+//         }
 
-        // stars / inner spaces
-        for(col = 0; col < 2 * n - 2 * row - 3; col++) {
-            if(col == 0 || col == 2 * n - 2 * row - 4) {
-                cout << "*";
-            }
-            else {
-                cout << " ";
-            }
-        }
-        cout << endl;
-    }
-}
+//         // stars / inner spaces
+//         for(col = 0; col < 2 * n - 2 * row - 3; col++) {
+//             if(col == 0 || col == 2 * n - 2 * row - 4) {
+//                 cout << "*";
+//             }
+//             else {
+//                 cout << " ";
+//             }
+//         }
+//         cout << endl;
+//     }
+// }
 
 // Hollow Full Pyramid
 // int main()
@@ -357,3 +357,41 @@ int main() {
 //         cout << endl;
 //     }
 // }
+
+// Flipped Solid Diamond
+int main () {
+    int n, row, col;
+    cout << "Enter a number: ";
+    cin >> n;
+    for(row=0; row<n; row++) {
+        // half pyramid
+        for(col=0; col<n-row; col++) {
+            cout << "*";
+        }
+        // space for pyramid
+        for(col=0; col<2*row+1; col++) {
+            cout << " ";
+        }
+        // half pyramid
+        for(col=0; col<n-row; col++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    // bottom pyramid
+    for(row=0; row<n; row++) {
+        // half pyramid
+        for(col=0; col<row+1; col++) {
+            cout << "*";
+        }
+        // space for pyramid
+        for(col=0; col<2*n-2*row-1; col++) {
+            cout << " ";
+        }
+        // half pyramid
+        for(col=0; col<row+1; col++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
