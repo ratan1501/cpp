@@ -359,38 +359,68 @@ using namespace std;
 // }
 
 // Flipped Solid Diamond
+// int main () {
+//     int n, row, col;
+//     cout << "Enter a number: ";
+//     cin >> n;
+//     for(row=0; row<n; row++) {
+//         // half pyramid
+//         for(col=0; col<n-row; col++) {
+//             cout << "*";
+//         }
+//         // space for pyramid
+//         for(col=0; col<2*row+1; col++) {
+//             cout << " ";
+//         }
+//         // half pyramid
+//         for(col=0; col<n-row; col++) {
+//             cout << "*";
+//         }
+//         cout << endl;
+//     }
+//     // bottom pyramid
+//     for(row=0; row<n; row++) {
+//         // half pyramid
+//         for(col=0; col<row+1; col++) {
+//             cout << "*";
+//         }
+//         // space for pyramid
+//         for(col=0; col<2*n-2*row-1; col++) {
+//             cout << " ";
+//         }
+//         // half pyramid
+//         for(col=0; col<row+1; col++) {
+//             cout << "*";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// Numaric/Star Pyramid
 int main () {
     int n, row, col;
     cout << "Enter a number: ";
-    cin >> n;
-    for(row=0; row<n; row++) {
-        // half pyramid
-        for(col=0; col<n-row; col++) {
-            cout << "*";
-        }
-        // space for pyramid
-        for(col=0; col<2*row+1; col++) {
-            cout << " ";
-        }
-        // half pyramid
-        for(col=0; col<n-row; col++) {
-            cout << "*";
+    cin>> n;
+
+    for(row=0; row<n; row++ ) {
+        
+        for(col=0; col<row+1; col++) {
+            cout << row + 1;
+            if(col != row) {
+                cout << "*";
+            }
+            
         }
         cout << endl;
     }
-    // bottom pyramid
-    for(row=0; row<n; row++) {
-        // half pyramid
-        for(col=0; col<row+1; col++) {
-            cout << "*";
-        }
-        // space for pyramid
-        for(col=0; col<2*n-2*row-1; col++) {
-            cout << " ";
-        }
-        // half pyramid
-        for(col=0; col<row+1; col++) {
-            cout << "*";
+    
+    for(row=0; row<n; row++ ) {
+        
+        for(col=0; col<n-row; col++) {
+            cout << n-row;
+            if(col != n-row-1) {
+                cout << "*";
+            }
         }
         cout << endl;
     }
