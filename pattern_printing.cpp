@@ -397,31 +397,51 @@ using namespace std;
 // }
 
 // Numaric/Star Pyramid
-int main () {
-    int n, row, col;
-    cout << "Enter a number: ";
-    cin>> n;
+// int main () {
+//     int n, row, col;
+//     cout << "Enter a number: ";
+//     cin>> n;
 
-    for(row=0; row<n; row++ ) {
+//     for(row=0; row<n; row++ ) {
         
-        for(col=0; col<row+1; col++) {
-            cout << row + 1;
-            if(col != row) {
-                cout << "*";
-            }
-            
-        }
-        cout << endl;
-    }
+//         for(col=0; col<row+1; col++) {
+//             cout << row + 1;
+//             if(col != row) {
+//                 cout << "*";
+//             }
+//         }
+//         cout << endl;
+//     }
     
-    for(row=0; row<n; row++ ) {
+//     for(row=0; row<n; row++ ) {
         
-        for(col=0; col<n-row; col++) {
-            cout << n-row;
-            if(col != n-row-1) {
-                cout << "*";
-            }
+//         for(col=0; col<n-row; col++) {
+//             cout << n-row;
+//             if(col != n-row-1) {
+//                 cout << "*";
+//             }
+//         }
+//         cout << endl;
+//     }
+// }
+
+
+// Alphabet Palindrome Pyramid
+int main () {
+    int row, col, n;
+    cout << "Enter a Number: ";
+    cin >> n;
+
+    for(row=0; row<n; row++) {
+        for(col=0; col<row+1; col++) {
+            cout << col+1;
+        }
+        col = col-1;
+
+        for(; col>=1; col=col-1) {
+            cout << col;
         }
         cout << endl;
     }
+
 }
