@@ -448,6 +448,28 @@ using namespace std;
 //     }
 // }
 
+
+//  Numeric Hollow Half Pyramid 
+
+int main () {
+    int n, row, col;
+
+    cout << "Enter a Number: ";
+    cin >> n;
+
+    for (row=0; row<n; row++) {
+        for(col=0; col<=row; col++) {
+            if(col==0 || col==row || row==n-1){
+                cout << col+1;
+            }
+            else {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+}
+
 // Numeric Full Pyramid
 // int main() {
 //     int n, start, col, row;
@@ -513,3 +535,5 @@ using namespace std;
 //         cout << endl;
 //     }
 // }
+
+// 
