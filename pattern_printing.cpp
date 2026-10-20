@@ -427,21 +427,89 @@ using namespace std;
 
 
 // Alphabet Palindrome Pyramid
-int main () {
-    int row, col, n;
-    cout << "Enter a Number: ";
-    cin >> n;
+// int main () {
+//     int row, col, n;
+//     cout << "Enter a Number: ";
+//     cin >> n;
 
-    for(row=0; row<n; row++) {
-        for(col=0; col<row+1; col++) {
-            cout << col+1;
-        }
-        col = col-1;
+//     for(row=0; row<n; row++) {
+//         for(col=0; col<row+1; col++) {
+//             int ans = col+1;
+//             char ch= ans + 'A' -1;
+//             cout << ch;
+//          }
 
-        for(; col>=1; col=col-1) {
-            cout << col;
-        }
-        cout << endl;
-    }
+//         for(col=row; col>=1; col=col-1 ) {
+//             int ans = col;
+//             char ch = ans + 'A' -1;
+//             cout << ch;
+//         }
+//         cout << endl;
+//     }
+// }
 
-}
+// Numeric Full Pyramid
+// int main() {
+//     int n, start, col, row;
+//     cout << "Enter a Number: ";
+//     cin >> n;
+
+//     // spaces 
+//     for(row=0; row<n; row++) {
+//         // spaces
+//         for(col=0; col<n-row-1; col++) {
+//             cout << " ";
+//         }
+//         // increasing numbers
+//         for(col=0; col<row+1; col++){
+//             cout << col+1;
+//         }
+//         // reverse counting 
+//         start = row;
+//         for(col=0; col<row; col++) {
+//             cout << start;
+//             start = start-1;
+//         }
+//         cout << endl;
+//     }
+// }
+
+// Hollow Full Pyramid
+// int main() {
+//     int n, start, col, row;
+//     cout << "Enter a Number: ";
+//     cin >> n;
+//     start = 1;
+
+//     for (row = 0; row < n; row++) {
+//         // Print leading spaces
+//         for (int space = 0; space < n - row - 1; space++) {
+//             cout << " ";
+//         }
+//         for (col = 0; col < 2 * row + 1; col++) {
+//             // First row or last row
+//             if (row == 0 || row == n - 1) {
+//                 if (col % 2 == 0) {
+//                     cout << start;
+//                     start++;
+//                 } else {
+//                     cout << " ";
+//                 }
+//             }
+//             else {
+//                 // First column
+//                 if (col == 0) {
+//                     cout << 1;
+//                 }
+//                 // Last column
+//                 else if (col == 2 * row) {
+//                     cout << row + 1;
+//                 }
+//                 else {
+//                     cout << " ";
+//                 }
+//             }
+//         }
+//         cout << endl;
+//     }
+// }
