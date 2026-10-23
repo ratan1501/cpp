@@ -18,20 +18,47 @@ using namespace std;
 
 // Write a Function to add 2 numbers.
 
-int add(int a, int b) {
-    int result = a+b;
-    return result;
+// int add(int a, int b) {
+//     int result = a+b;
+//     return result;
+// }
+
+// int main() {
+//     int a;
+//     cout << "Enter the value of a: " << endl;
+//     cin >> a;
+
+//     int b;
+//     cout << "Enter the value of b: " << endl;
+//     cin >> b;
+
+//     int sum = add(a,b);
+//     cout << "Addition result is: " << sum << endl;
+// }
+
+
+// Find max of 3 numbers
+
+int findMax (int num1, int num2, int num3) {
+    if(num1 > num2 && num1 > num3) {
+        return num1;
+    }
+    else if (num2 > num1 && num2 > num3) {
+        return num2;
+    }
+    else {
+        return num3;
+    }
 }
 
 int main() {
-    int a;
-    cout << "Enter the value of a: " << endl;
+    int a, b, c;
+    cout << "Enter First Number: ";
     cin >> a;
-
-    int b;
-    cout << "Enter the value of b: " << endl;
+    cout << "Enter Second Number: ";
     cin >> b;
-
-    int sum = add(a,b);
-    cout << "Addition result is: " << sum << endl;
+    cout << "Enter Third Number: ";
+    cin >> c;
+    int maximunNumber = findMax(a, b, c);
+    cout << "Maximum Number is: "<< maximunNumber << endl;
 }
