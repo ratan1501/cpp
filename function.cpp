@@ -65,24 +65,45 @@ using namespace std;
 
 
 // Counting from 1 to N
+// void coutPrint(int n) {
+//     for(int i=0; i<=n; i++) {
+//         cout << i << " ";
+//     }
+//     cout << endl;
+// }
 
-void coutPrint(int n) {
-    for(int i=0; i<=n; i++) {
-        cout << i << " ";
+// int main () {
+//     int n;
+//     cout << "Enter the value of n: "  << endl;
+//     cin >> n;
+
+//     coutPrint(n);
+
+//     return 0;
+// }
+
+// Students & Grade Problem
+
+char getGrade (int marks) {
+    switch (marks/10) {
+        case 10 : return 'A'; break;
+        case 9 : return 'B'; break;
+        case 8 : return 'C'; break;
+        case 7 : return 'D'; break;
+        case 6 : return 'E'; break;
+        default : return 'F';
     }
-    cout << endl;
 }
+
 
 int main () {
-    int n;
-    cout << "Enter the value of n: "  << endl;
-    cin >> n;
+    int marks;
+    cout << "Enter the number: " <<endl;
+    cin >> marks;
 
-    coutPrint(n);
-
+    cout << "Grade:" << getGrade(marks) << endl;
     return 0;
 }
-
 
 
 
