@@ -83,38 +83,44 @@ using namespace std;
 // }
 
 // Students & Grade Problem
+// char getGrade (int marks) {
+//     switch (marks/10) {
+//         case 10 : return 'A'; break;
+//         case 9 : return 'B'; break;
+//         case 8 : return 'C'; break;
+//         case 7 : return 'D'; break;
+//         case 6 : return 'E'; break;
+//         default : return 'F';
+//     }
+// }
 
-char getGrade (int marks) {
-    switch (marks/10) {
-        case 10 : return 'A'; break;
-        case 9 : return 'B'; break;
-        case 8 : return 'C'; break;
-        case 7 : return 'D'; break;
-        case 6 : return 'E'; break;
-        default : return 'F';
+// int main () {
+//     int marks;
+//     cout << "Enter the number: " <<endl;
+//     cin >> marks;
+
+//     cout << "Grade:" << getGrade(marks) << endl;
+//     return 0;
+// }
+
+// Sum of Even number upto N
+
+int getEven(int n) {
+    int sum = 0;
+    for (int i=2; i<=n; i+=2) {
+        sum = sum + i;
     }
+    return sum;
 }
 
 
 int main () {
-    int marks;
-    cout << "Enter the number: " <<endl;
-    cin >> marks;
+    int n;
+    cout << "Enter the value of n: " << endl;
+    cin >> n;
 
-    cout << "Grade:" << getGrade(marks) << endl;
+    int ans = getEven(n);
+    cout << "Sum upto " << n << " is " << ans << endl;
     return 0;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
