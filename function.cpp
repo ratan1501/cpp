@@ -125,7 +125,7 @@ using namespace std;
 // }
 
 
-// of tutorial
+// sum of all even numbers from 2 to n
 
 int getEvenSum(int n) {
     cout << "inside getEvenSum Function " << endl;
@@ -151,5 +151,27 @@ int main() {
     int result = getEvenSum(n);
 
     cout << "Final sum is: " << result << endl;
+    return 0;
+}
+
+
+
+
+// area of triangle
+
+double getTriangleArea(int length , int breadth) {
+    double area = 0.5 * length * breadth;
+    return area;
+}
+
+
+int main () {
+    double length, breadth;
+    cout << "Enter the Length: ";
+    cin >> length;
+    cout << "Enter the breadth: ";
+    cin >> breadth;
+    double result = getTriangleArea(length, breadth);
+    cout << "Area is : " << result << endl;
     return 0;
 }
