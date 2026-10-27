@@ -105,22 +105,51 @@ using namespace std;
 
 // Sum of Even number upto N
 
-int getEven(int n) {
+// int getEven(int n) {
+//     int sum = 0;
+//     for (int i=2; i<=n; i+=2) {
+//         sum = sum + i;
+//     }
+//     return sum;
+// }
+
+
+// int main () {   
+//     int n;
+//     cout << "Enter the value of n: " << endl;
+//     cin >> n;
+
+//     int ans = getEven(n);
+//     cout << "Sum upto " << n << " is " << ans << endl;
+//     return 0;
+// }
+
+
+// of tutorial
+
+int getEvenSum(int n) {
+    cout << "inside getEvenSum Function " << endl;
+    cout << "value of n is " << n << endl;
+
     int sum = 0;
-    for (int i=2; i<=n; i+=2) {
+    cout << "Initial value of sum is " << sum << endl;
+    for (int i = 2; i<=n; i= i+2) {
+        cout << "For value of i: " << i << endl;
         sum = sum + i;
+        cout << "sum now become: " << sum << endl;
     }
+    cout << "returing sum = " << sum << endl;
     return sum;
 }
 
 
-int main () {
+int main() {
     int n;
-    cout << "Enter the value of n: " << endl;
+    cout << "Enter a number: ";
     cin >> n;
 
-    int ans = getEven(n);
-    cout << "Sum upto " << n << " is " << ans << endl;
-    return 0;
+    int result = getEvenSum(n);
 
+    cout << "Final sum is: " << result << endl;
+    return 0;
 }
