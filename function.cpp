@@ -127,51 +127,70 @@ using namespace std;
 
 // sum of all even numbers from 2 to n
 
-int getEvenSum(int n) {
-    cout << "inside getEvenSum Function " << endl;
-    cout << "value of n is " << n << endl;
+// int getEvenSum(int n) {
+//     cout << "inside getEvenSum Function " << endl;
+//     cout << "value of n is " << n << endl;
 
-    int sum = 0;
-    cout << "Initial value of sum is " << sum << endl;
-    for (int i = 2; i<=n; i= i+2) {
-        cout << "For value of i: " << i << endl;
-        sum = sum + i;
-        cout << "sum now become: " << sum << endl;
-    }
-    cout << "returing sum = " << sum << endl;
-    return sum;
-}
+//     int sum = 0;
+//     cout << "Initial value of sum is " << sum << endl;
+//     for (int i = 2; i<=n; i= i+2) {
+//         cout << "For value of i: " << i << endl;
+//         sum = sum + i;
+//         cout << "sum now become: " << sum << endl;
+//     }
+//     cout << "returing sum = " << sum << endl;
+//     return sum;
+// }
 
 
-int main() {
-    int n;
-    cout << "Enter a number: ";
-    cin >> n;
+// int main() {
+//     int n;
+//     cout << "Enter a number: ";
+//     cin >> n;
 
-    int result = getEvenSum(n);
+//     int result = getEvenSum(n);
 
-    cout << "Final sum is: " << result << endl;
-    return 0;
-}
-
+//     cout << "Final sum is: " << result << endl;
+//     return 0;
+// }
 
 
 
 // area of triangle
 
-double getTriangleArea(int length , int breadth) {
-    double area = 0.5 * length * breadth;
-    return area;
-}
+// double getTriangleArea(int length , int breadth) {
+//     double area = 0.5 * length * breadth;
+//     return area;
+// }
 
+
+// int main () {
+//     double length, breadth;
+//     cout << "Enter the Length: ";
+//     cin >> length;
+//     cout << "Enter the breadth: ";
+//     cin >> breadth;
+//     double result = getTriangleArea(length, breadth);
+//     cout << "Area is : " << result << endl;
+//     return 0;
+// }
+
+// Number is odd or even 
+
+void evenOdd(int n) {
+    if(n % 2 == 0) {
+        cout << "The given number is even";
+    }
+    else {
+        cout << "The given number is odd";
+    }
+}
 
 int main () {
-    double length, breadth;
-    cout << "Enter the Length: ";
-    cin >> length;
-    cout << "Enter the breadth: ";
-    cin >> breadth;
-    double result = getTriangleArea(length, breadth);
-    cout << "Area is : " << result << endl;
+    cout << "Enter a Number: "; 
+    int n;
+    cin >> n;
+    evenOdd(n);
     return 0;
 }
+
