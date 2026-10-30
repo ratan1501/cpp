@@ -154,6 +154,10 @@ using namespace std;
 //     return 0;
 // }
 
+//     cout << "Final sum is: " << result << endl;
+//     return 0;
+// }
+
 
 
 // area of triangle
@@ -175,22 +179,67 @@ using namespace std;
 //     return 0;
 // }
 
-// Number is odd or even 
+// // Number is odd or even 
 
-void evenOdd(int n) {
-    if(n % 2 == 0) {
-        cout << "The given number is even";
-    }
-    else {
-        cout << "The given number is odd";
-    }
-}
+// void evenOdd(int n) {
+//     if(n % 2 == 0) {
+//         cout << "The given number is even";
+//     }
+//     else {
+//         cout << "The given number is odd";
+//     }
+// }
 
-int main () {
-    cout << "Enter a Number: "; 
-    int n;
-    cin >> n;
-    evenOdd(n);
-    return 0;
-}
+// int main () {
+//     cout << "Enter a Number: "; 
+//     int n;
+//     cin >> n;
+//     evenOdd(n);
+//     return 0;
+// }
 
+// // Find the factorial
+
+// int getFactorial(int n) {
+//     int final = 1;
+//     for (int i = 1; i<=n; i++) {
+//         final = final*i;
+//     }
+//     return final;
+// }
+
+// int main () {
+//     cout << "Enter a Number: ";
+//     int n;
+//     cin >> n;
+//     cout << "The Factorial of " << n << " is: " << getFactorial(n);
+//     return 0;
+// }
+
+// // Check Number is prime or not
+
+// bool getPrime(int n) {
+//     if (n <= 1) {
+//         return false;
+//     }
+//     for (int i = 2; i * i <= n; i++) {
+//         if (n % i == 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// int main() {
+//     int n;
+//     cout << "Enter a Number: ";
+//     cin >> n;
+
+//     if (getPrime(n)) {
+//         cout << "The Number is Prime.";
+//     }
+//     else {
+//         cout << "The Number is not Prime.";
+//     }
+//     return 0;
+// }
