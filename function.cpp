@@ -198,7 +198,7 @@ using namespace std;
 //     return 0;
 // }
 
-// // Find the factorial
+// Find the factorial
 
 // int getFactorial(int n) {
 //     int final = 1;
@@ -216,7 +216,7 @@ using namespace std;
 //     return 0;
 // }
 
-// // Check Number is prime or not
+// Check Number is prime or not
 
 // bool getPrime(int n) {
 //     if (n <= 1) {
