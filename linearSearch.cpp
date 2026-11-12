@@ -1,4 +1,5 @@
 #include <iostream>
+#include <climits>
 using namespace std;
 
 // int main() {
@@ -46,20 +47,37 @@ using namespace std;
 
 
 // Find Numbers of 0s and 1s
-int main () {
-    int arr[] = {1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1,};
-    int size = 11;
-    int storeOnes = 0;
-    int storeZeros = 0;
+// int main () {
+//     int arr[] = {1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1,};
+//     int size = 11;
+//     int storeOnes = 0;
+//     int storeZeros = 0;
 
-    for (int i=0; i<size; i++) {
-        if(arr[i] == 1) {
-            storeOnes++;
-        }
-        else {
-            storeZeros++;
+//     for (int i=0; i<size; i++) {
+//         if(arr[i] == 1) {
+//             storeOnes++;
+//         }
+//         else {
+//             storeZeros++;
+//         }
+//     }
+//     cout << "Ones: " << storeOnes << endl;
+//     cout << "Zeros: " << storeZeros << endl;
+// }
+
+
+// Maximum number in an Array
+
+int main () {
+    int arr [] = {12, 34, 63, 11, 10, 54, 32, 90, 111, 83, 579, 239};
+    int size = 11;
+    int limit = INT_MIN;
+    int highest = 0;
+
+    for(int i=0; i<size; i++) {
+        if(arr[i] > limit) {
+            limit = arr[i];
         }
     }
-    cout << "Ones: " << storeOnes << endl;
-    cout << "Zeros: " << storeZeros << endl;
+    cout << "The Highest Number in Array is: " << limit << endl;
 }
