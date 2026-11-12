@@ -79,7 +79,6 @@ using namespace std;
 // }
 
 // Extreme Print in Array
-
 // int main() {
 //     int arr[] = {10, 20, 30, 40, 50, 60, 70};
 //     int size = 7;
@@ -105,7 +104,6 @@ using namespace std;
 // }
 
 // Reverse an Array
-
 int main() {
     int arr[] = {10, 20, 30, 40, 50, 60, 70};
     int size = 7;
